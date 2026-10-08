@@ -1,12 +1,14 @@
 {
-  "version": 2,
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "functions": {
-    "index.js": {
+    "api/index.js": {
       "maxDuration": 60,
       "memory": 1024,
       "includeFiles": "lib/**"
     }
-  }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api" }
+  ]
 }

@@ -4,6 +4,9 @@
   "description": "Apollo GraphQL backend for the HotCol Employee ESS app.",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
